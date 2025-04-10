@@ -10,7 +10,7 @@ Is a library to handle a model repository for SQLite.
 ## Getting started
 
 1. Download library in your repository path
-  [sqlitemodel library](http://google.com)
+  [sqlitemodel library](https://github.com/abarajasca/sqlitemodel)
 
 2. Add library reference in pubspec.yaml file:
 ```yaml
