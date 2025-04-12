@@ -9,10 +9,9 @@ import 'providers/database_provider.dart';
 class TestSqLiteDatabase extends DatabaseProvider {
   late final DatabaseConfig databaseConfig;
 
-  TestSqLiteDatabase(DatabaseConfig databaseConfig){
-    this.databaseConfig = databaseConfig;
-  }
+  TestSqLiteDatabase(this.databaseConfig);
 
+  @override
   Future<Database> getDatabaseInstance() async {
     // Init ffi loader if needed.
     sqfliteFfiInit();

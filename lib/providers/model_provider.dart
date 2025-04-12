@@ -30,7 +30,9 @@ class ModelProvider<T extends ModelBase> {
           conflictAlgorithm: ConflictAlgorithm.replace
       );
       return newId;
-    } on Exception {
+    } on Exception catch(e,s){
+      print('Exception: $e');
+      print('Statck:\n $s');
       return newId;
     }
   }
